@@ -1,0 +1,5 @@
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\bin\Debug\BE.dll
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\bin\Debug\BE.pdb
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.dll
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.pdb

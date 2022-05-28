@@ -1,0 +1,80 @@
+﻿using System.Data;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DAL
+{
+    public class Acceso_DAL
+    {
+        //CREO LA CONEXION A LA BASE DE DATOS 
+        SqlConnection conexion = new SqlConnection(@"Data Source = LAPTOP-RGP5HKC3\MSSQLSERVER01; Initial CAtalog = VeterinariaLPPA; Integrated Security = SSPI");
+        
+
+        //ABRO Y CIERRO LA CONEXION
+        public void Abrir()
+        {
+            conexion.Open();
+        }
+
+        public void Cerrar()
+        {
+            conexion.Close();
+        }
+
+        SqlTransaction transaccion;
+
+        //HACEMOS UN METODO QUE CREARA EL COMANDO PARA NO TENER QUE REPETIR EL PROCEDIMIENTO
+        //EL MISMO TENDRA COMO ENTRADA "STOREPROCEDURE" Y PARAMETROS (privado solo lo uso aca)
+        private SqlCommand CrearComando(string storeprocedure, SqlParameter[] parametros)
+        {
+            // INSTANCIO UN COMANDO DE TIPO SQL COMMAND
+            SqlCommand comando = new SqlCommand();
+            // AL COMANDO INSTANCIADO LE PASO LA CONEXION
+            comando.Connection = conexion;
+            // LE INDICO EL TIPO DE COMANDO QUE SERA STORE PROCEDURE
+            comando.CommandType = CommandType.StoredProcedure;
+            // LE PASO EL COMMANDTEXT --> STRING storeprocedure
+            comando.CommandText = storeprocedure;
+            //SI LA TRANSACCION TIENE DATOS (ES TRANSACCION) 
+            if (transaccion != null)
+            {
+                //LE PASO LA TRANSACCION A MI COMANDO
+                comando.Transaction = transaccion;
+            }
+            if (parametros != null)
+            {
+                // SI HAY PARAMETROS, PASO PARAMETROS
+                comando.Parameters.AddRange(parametros);
+            }
+            return comando;
+        }
+
+        public DataTable Leer(string storeprocedure, SqlParameter[] parametros)
+        {
+            //CREAMOS EL OBJETO TABLA 
+            DataTable tabla = new DataTable();
+            //CREAMOS EL ADAPTADOR (puente para recuperar datos de la tabla)
+            SqlDataAdapter adaptador = new SqlDataAdapter();
+            //PASAMOS AL SELECT COMMAND EL COMANDO (DESDE EL METODO CREAR COMANDO QUE LO HACE TODO) 
+            adaptador.SelectCommand = CrearComando(storeprocedure, parametros);
+            // AGREGAMOS LAS FILAS A LA TABLA
+            adaptador.Fill(tabla);
+            adaptador = null;
+            return tabla;
+        }
+
+        public bool Verificar_Usuario(string sql, SqlParameter[] parametros)
+        {
+
+            Abrir();
+            SqlCommand cmd = CrearComando(sql, parametros);
+            SqlDataReader lector = cmd.ExecuteReader();
+
+            bool res = lector.HasRows;
+            lector = null;
+            Cerrar();
+            return res;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\bin\Debug\DAL.dll
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\bin\Debug\DAL.pdb
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\bin\Debug\BE.dll
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\bin\Debug\BE.pdb
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.dll
+D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.pdb
