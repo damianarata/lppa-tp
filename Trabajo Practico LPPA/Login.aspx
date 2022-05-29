@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Respuesta.aspx.cs" Inherits="Respuesta" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Login.aspx.cs" Inherits="_Default" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta charset="utf-8">
+<head>
+		<meta charset="utf-8">
 		<title>Veterinaria Cachorros SA</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -22,9 +22,9 @@
 		<script src="js/typed.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.js"></script>
-</head>
-<body style="height: 522px">
-    <!-- start preloader -->
+	</head>
+<body>
+	<!-- start preloader -->
 		<div class="preloader">
 			<div class="sk-spinner sk-spinner-wave">
      	 		<div class="sk-rect1"></div>
@@ -77,7 +77,7 @@
 						<li><a href="#about">SOBRE NOSOTROS</a></li>
 						<li><a href="#team">EQUIPO</a></li>
 						<li><a href="#service">SERVICIOS</a></li>
-						<li><a href="#portfolio">PORUCTOS</a></li>
+						<li><a href="#portfolio">PORDUCTOS</a></li>
 						<li><a href="#contact">CONTACTO</a></li>
 					</ul>
 				</div>
@@ -85,16 +85,21 @@
 		</nav>
 		<!-- end navigation -->
     <form id="form1" runat="server">
-        <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            <br />
-            <br />
-            Las acciones que el usuario puede realizar son:<br />
-            <br />
-        </div>
-        <div style="margin-left: 80px">
-            <asp:ListBox ID="ListBox1" runat="server" Height="105px" Width="209px" BackColor="Black"></asp:ListBox>
-        </div>
+    <div class="auto-style1">
+    
+        USUARIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="130px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Debe ingresar un usuario para continuar"></asp:RequiredFieldValidator>
+        <br />
+        CONTRASEÑA&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" ForeColor="Black" Width="130px"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Debe ingresar una contraseña para continuar"></asp:RequiredFieldValidator>
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" Width="168px" ForeColor="Black" />
+        <br />
+        <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="Usuario o Contraseña Incorrecto" Visible="False"></asp:Label>
+    
+    </div>
     </form>
 </body>
 </html>

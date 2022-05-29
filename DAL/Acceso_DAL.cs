@@ -8,7 +8,8 @@ namespace DAL
     public class Acceso_DAL
     {
         //CREO LA CONEXION A LA BASE DE DATOS 
-        SqlConnection conexion = new SqlConnection(@"Data Source = LAPTOP-RGP5HKC3\MSSQLSERVER01; Initial CAtalog = VeterinariaLPPA; Integrated Security = SSPI");
+        //SqlConnection conexion = new SqlConnection(@"Data Source = LAPTOP-RGP5HKC3\MSSQLSERVER01; Initial CAtalog = VeterinariaLPPA; Integrated Security = SSPI");
+        SqlConnection conexion = new SqlConnection(@"Data Source = DESKTOP-ERQ371J\SQLEXPRESS; Initial CAtalog = VeterinariaLPPA; Integrated Security = SSPI");
         
 
         //ABRO Y CIERRO LA CONEXION
