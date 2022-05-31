@@ -196,6 +196,8 @@ header .social-icon li a
 	border-radius: 0;	
 	width: 100%;
 	z-index: 1000;
+    top: 0px;
+    left: -2px;
 }
 .sticky {	
 	position: fixed;

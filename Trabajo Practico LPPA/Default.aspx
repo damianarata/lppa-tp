@@ -77,7 +77,7 @@
 						<li><a href="#about">SOBRE NOSOTROS</a></li>
 						<li><a href="#team">EQUIPO</a></li>
 						<li><a href="#service">SERVICIOS</a></li>
-						<li><a href="#portfolio">PORDUCTOS</a></li>
+						<li><a href="#portfolio">PRODUCTOS</a></li>
 						<li><a href="#contact">CONTACTO</a></li>
 					</ul>
 				</div>

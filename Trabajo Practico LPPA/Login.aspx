@@ -77,7 +77,7 @@
 						<li><a href="#about">SOBRE NOSOTROS</a></li>
 						<li><a href="#team">EQUIPO</a></li>
 						<li><a href="#service">SERVICIOS</a></li>
-						<li><a href="#portfolio">PORDUCTOS</a></li>
+						<li><a href="#portfolio">PRODUCTOS</a></li>
 						<li><a href="#contact">CONTACTO</a></li>
 					</ul>
 				</div>
@@ -88,13 +88,14 @@
     <div class="auto-style1">
     
         USUARIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="130px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="222px" Height="21px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Debe ingresar un usuario para continuar"></asp:RequiredFieldValidator>
         <br />
-        CONTRASEÑA&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" ForeColor="Black" Width="130px"></asp:TextBox>
+        CONTRASEÑA&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black" Width="222px" Height="21px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Debe ingresar una contraseña para continuar"></asp:RequiredFieldValidator>
         <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" Width="168px" ForeColor="Black" />
         <br />
         <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="Usuario o Contraseña Incorrecto" Visible="False"></asp:Label>

@@ -13,7 +13,7 @@ public partial class Inicio : System.Web.UI.Page
 
     protected void LinkButton1_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Login.aspx");
+        //Response.Redirect("Login.aspx");
 
     }
 }

@@ -11,7 +11,8 @@ namespace DAL
         Acceso_DAL ac = new Acceso_DAL();
         public Usuario_BE loguear(string usuario, string contraseña)
         {
-         
+
+            string contraseña_encriptada = Calcular_HashMD5(contraseña);
 
             SqlParameter[] parametros = new SqlParameter[2];
             parametros[0] = new SqlParameter();
@@ -22,7 +23,7 @@ namespace DAL
             parametros[1] = new SqlParameter();
             parametros[1].ParameterName = "@pass";
             parametros[1].DbType = DbType.String;
-            parametros[1].Value = contraseña;
+            parametros[1].Value = contraseña_encriptada;
 
             DataTable Tabla = ac.Leer("verificar_usuario", parametros);
 
@@ -86,7 +87,20 @@ namespace DAL
             return acciones;
         }
 
-        
+        private string Calcular_HashMD5(string cadena)
+        {
+            using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
+            {
+                byte[] cadenaBytes = System.Text.Encoding.ASCII.GetBytes(cadena);
+                byte[] hashBytes = md5.ComputeHash(cadenaBytes);
 
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    sb.Append(hashBytes[i].ToString("X2"));
+                }
+                return sb.ToString();
+            }
+        }
     }
 }

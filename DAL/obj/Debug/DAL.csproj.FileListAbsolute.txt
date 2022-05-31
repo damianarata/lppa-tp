@@ -16,3 +16,39 @@ C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.ca
 C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.dll
 C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\bin\Debug\DAL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\bin\Debug\DAL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\bin\Debug\BE.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\bin\Debug\BE.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\obj\Debug\DAL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v2\DAL\obj\Debug\DAL.pdb
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\bin\Debug\BE.dll
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\bin\Debug\BE.pdb
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\obj\Debug\DAL.dll
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\DAL\obj\Debug\DAL.pdb
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\DAL.dll
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\DAL.pdb
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\BE.dll
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\BE.pdb
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.dll
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.pdb
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\BE.dll
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\bin\Debug\BE.pdb
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.dll
+C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.pdb

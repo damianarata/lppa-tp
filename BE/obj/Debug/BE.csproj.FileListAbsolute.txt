@@ -3,3 +3,15 @@ D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\T
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.dll
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BE\obj\Debug\BE.pdb
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\bin\Debug\BE.dll
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\bin\Debug\BE.pdb
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\obj\Debug\BE.dll
+C:\Users\marti\Desktop\Trabajo Practico LPPA\lppa-tp-v2\BE\obj\Debug\BE.pdb
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\bin\Debug\BE.dll
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\bin\Debug\BE.pdb
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\obj\Debug\BE.csprojAssemblyReference.cache
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\obj\Debug\BE.dll
+E:\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BE\obj\Debug\BE.pdb
