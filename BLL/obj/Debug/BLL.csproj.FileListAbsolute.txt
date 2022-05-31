@@ -9,3 +9,14 @@ D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\T
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BLL\obj\Debug\BLL.dll
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\BLL\obj\Debug\BLL.pdb
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\BLL.dll
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\BLL.pdb
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\BE.dll
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\DAL.dll
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\BE.pdb
+C:\Users\Julieta\Documents\lppa-tp\BLL\bin\Debug\DAL.pdb
+C:\Users\Julieta\Documents\lppa-tp\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Julieta\Documents\lppa-tp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Julieta\Documents\lppa-tp\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Julieta\Documents\lppa-tp\BLL\obj\Debug\BLL.dll
+C:\Users\Julieta\Documents\lppa-tp\BLL\obj\Debug\BLL.pdb

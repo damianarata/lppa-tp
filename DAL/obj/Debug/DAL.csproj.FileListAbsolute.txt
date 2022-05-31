@@ -7,3 +7,12 @@ D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\T
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.dll
 D:\Facultad\En Curso\LPPA\Visual Studio\Trabajo Practico LPPA - Primer Entrega\Trabajo Practico LPPA\Trabajo Practico LPPA\DAL\obj\Debug\DAL.pdb
+C:\Users\Julieta\Documents\lppa-tp\DAL\bin\Debug\DAL.dll
+C:\Users\Julieta\Documents\lppa-tp\DAL\bin\Debug\DAL.pdb
+C:\Users\Julieta\Documents\lppa-tp\DAL\bin\Debug\BE.dll
+C:\Users\Julieta\Documents\lppa-tp\DAL\bin\Debug\BE.pdb
+C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.dll
+C:\Users\Julieta\Documents\lppa-tp\DAL\obj\Debug\DAL.pdb
