@@ -37,14 +37,14 @@
     	<!-- end preloader -->
 
         <!-- start header -->
-        <header>
+        <header style="padding: 3%;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <p><i class="fa fa-phone"></i><span> Telefono</span>4955-3789</p>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">info@cachorros.com.ar</a></p>
+                        <div style="display: flex;"><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">info@cachorros.com.ar</a></div>
                     </div>
                     <div class="col-md-5 col-sm-4 col-xs-12">
                         <ul class="social-icon">
@@ -61,7 +61,7 @@
         <!-- end header -->
 
     	<!-- start navigation -->
-		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+		<nav class="navbar navbar-default templatemo-nav" style="display: inline-table;" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -73,12 +73,12 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#top">INICIO</a></li>
-						<li><a href="#about">SOBRE NOSOTROS</a></li>
-						<li><a href="#team">EQUIPO</a></li>
-						<li><a href="#service">SERVICIOS</a></li>
-						<li><a href="#portfolio">PRODUCTOS</a></li>
-						<li><a href="#contact">CONTACTO</a></li>
+						<li><a href="#top" onclick="window.open('/Default.aspx#top','_self')">INICIO</a></li>
+                        <li><a href="#about" onclick="window.open('/Default.aspx#about','_self')">SOBRE NOSOTROS</a></li>
+						<li><a href="#team" onclick="window.open('/Default.aspx#team','_self')">EQUIPO</a></li>
+						<li><a href="#service" onclick="window.open('/Default.aspx#service','_self')">SERVICIOS</a></li>
+						<li><a href="#portfolio" onclick="window.open('/Default.aspx#portfolio','_self')">PRODUCTOS</a></li>
+						<li><a href="#contact" onclick="window.open('/Default.aspx#contact','_self')">CONTACTO</a></li>
 					</ul>
 				</div>
 			</div>
@@ -102,5 +102,6 @@
     
     </div>
     </form>
+
 </body>
 </html>

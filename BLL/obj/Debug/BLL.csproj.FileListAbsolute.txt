@@ -64,3 +64,14 @@ C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administraci
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BLL\obj\Debug\BLL.dll
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\BLL\obj\Debug\BLL.pdb
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\BLL.dll
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\BLL.pdb
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\BE.dll
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\DAL.dll
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\BE.pdb
+C:\Users\Navegador\lppa-tp-main\BLL\bin\Debug\DAL.pdb
+C:\Users\Navegador\lppa-tp-main\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Navegador\lppa-tp-main\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\lppa-tp-main\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Navegador\lppa-tp-main\BLL\obj\Debug\BLL.dll
+C:\Users\Navegador\lppa-tp-main\BLL\obj\Debug\BLL.pdb

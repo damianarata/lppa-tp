@@ -37,14 +37,14 @@
     	<!-- end preloader -->
 
         <!-- start header -->
-        <header>
+        <header style="padding: 3%;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <p><i class="fa fa-phone"></i><span> Telefono</span>4955-3789</p>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">info@cachorros.com.ar</a></p>
+                        <div style="display: flex;"><i class="fa fa-envelope-o"></i><span> Email</span><a href="#">info@cachorros.com.ar</a></div>
                     </div>
                     <div class="col-md-5 col-sm-4 col-xs-12">
                         <ul class="social-icon">
@@ -69,7 +69,7 @@
 						<span class="icon icon-bar"></span>
 						<span class="icon icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">Cachorros</a>
+					<a href="#" onclick="window.open('/Default.aspx','_self')" class="navbar-brand">Cachorros</a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">

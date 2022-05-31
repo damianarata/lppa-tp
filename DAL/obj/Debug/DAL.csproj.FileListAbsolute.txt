@@ -52,3 +52,12 @@ C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administraci
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.dll
 C:\Users\marti\Desktop\UAI\2022-1\Lenguajes de Programacion para la Administracion\lppa-tp-v2-martin-password-encryption\lppa-tp-v2\DAL\obj\Debug\DAL.pdb
+C:\Users\Navegador\lppa-tp-main\DAL\bin\Debug\DAL.dll
+C:\Users\Navegador\lppa-tp-main\DAL\bin\Debug\DAL.pdb
+C:\Users\Navegador\lppa-tp-main\DAL\bin\Debug\BE.dll
+C:\Users\Navegador\lppa-tp-main\DAL\bin\Debug\BE.pdb
+C:\Users\Navegador\lppa-tp-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Navegador\lppa-tp-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\lppa-tp-main\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Navegador\lppa-tp-main\DAL\obj\Debug\DAL.dll
+C:\Users\Navegador\lppa-tp-main\DAL\obj\Debug\DAL.pdb
