@@ -34,6 +34,8 @@
       	 		<div class="sk-rect4"></div>
       			<div class="sk-rect5"></div>
      		    
+     		    
+     		    
      		</div>
     	</div>
     	<!-- end preloader -->
@@ -96,8 +98,13 @@
         </div>
         <div style="margin-left: 80px">
             <asp:ListBox ID="ListBox1" runat="server" Height="105px" Width="209px" BackColor="Black"></asp:ListBox>
+            <div id="popup" style="max-height:600px;overflow-y:scroll;">
+             <asp:GridView ID="GridView1" runat="server" Visible="False" Width="879px" style="height:400px; overflow:auto">
+                </asp:GridView>
+            </div>
+            
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Visible="False" />
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Bitacora" Visible="False" />
     </form>
 </body>
 </html>

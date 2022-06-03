@@ -87,6 +87,25 @@ namespace DAL
             return acciones;
         }
 
+        public List<DetalleBitacora_BE>Listar_Bitacora()
+        {
+            List<DetalleBitacora_BE> bitacora = new List<DetalleBitacora_BE>();
+                       
+            DataTable Tabla = ac.Leer("listar_bitacora", null);
+            foreach (DataRow reg in Tabla.Rows)
+            {
+                DetalleBitacora_BE detalle = new DetalleBitacora_BE();
+                detalle.Id = Convert.ToInt32(reg["id"].ToString());
+                detalle.Id_Usuario = Convert.ToInt32(reg["id_usuario"].ToString());
+                detalle.Detalle = reg["detalle"].ToString();
+                detalle.Usuario = reg["usuario"].ToString();
+                detalle.Fecha =Convert.ToDateTime(reg["Fecha"].ToString());
+                bitacora.Add(detalle);
+            }
+            return bitacora;
+        }
+
+
         private string Calcular_HashMD5(string cadena)
         {
             using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())

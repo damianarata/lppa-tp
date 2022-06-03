@@ -27,6 +27,11 @@ namespace BLL
            return mapper.Buscar_Acciones(id_tipousuario);
         }
 
+        public List<DetalleBitacora_BE> Cargar_Bitacora()
+        {
+            return mapper.Listar_Bitacora();
+        }
+
     }
 }
 
