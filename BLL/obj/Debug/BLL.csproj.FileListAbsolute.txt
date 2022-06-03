@@ -86,3 +86,14 @@ C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.csproj.CoreCom
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.dll
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\BLL.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\BLL.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\BE.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\BE.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.pdb

@@ -70,3 +70,12 @@ C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.csproj.CoreCom
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.dll
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\bin\Debug\DAL.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\bin\Debug\DAL.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\bin\Debug\BE.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\bin\Debug\BE.pdb
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\obj\Debug\DAL.dll
+C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\DAL\obj\Debug\DAL.pdb

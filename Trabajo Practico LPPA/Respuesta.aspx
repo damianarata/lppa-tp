@@ -22,6 +22,13 @@
 		<script src="js/typed.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.js"></script>
+        <script> 
+            protected void OnPaging(object sender, GridViewPageEventArgs e)
+            {
+                GridView1.PageIndex = e.NewPageIndex;
+                this.BindGrid();
+            }
+        </script>
 </head>
 <body style="height: 522px">
     <!-- start preloader -->
@@ -88,6 +95,8 @@
 			</div>
 		</nav>
 		<!-- end navigation -->
+
+        
         <div style="padding: 1%;
 ">
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
@@ -98,12 +107,35 @@
         </div>
         <div style="margin-left: 80px">
             <asp:ListBox ID="ListBox1" runat="server" Height="105px" Width="209px" BackColor="Black"></asp:ListBox>
+        </div>
+        <div style="padding: 1%;
+            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+        </div>
+        <div style="margin-left: 80px">
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Mostar Bitacora" Visible="False" BackColor="#CCCCCC" ForeColor="Black" />
             <div id="popup" style="max-height:600px;overflow-y:scroll;">
-             <asp:GridView ID="GridView1" runat="server" Visible="False" Width="879px" style="height:400px; overflow:auto">
-                </asp:GridView>
+             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true"
+                OnPageIndexChanging="OnPaging" PageSize="10" Font-Names="Arial" BackColor="#999999" BorderColor="Black" BorderStyle="Dashed" ForeColor="Black">
+                <Columns>
+                    <asp:BoundField ItemStyle-Width="150px" DataField="Fecha" HeaderText="Fecha" >
+                    <ItemStyle Width="150px"></ItemStyle>
+                    </asp:BoundField>
+                    <asp:BoundField ItemStyle-Width="100px" DataField="Usuario" HeaderText="Usuario" >
+                    <ItemStyle Width="100px"></ItemStyle>
+                    </asp:BoundField>
+                     <asp:BoundField ItemStyle-Width="80px" DataField="Id_Usuario" HeaderText="Id_Usuario" >
+                    <ItemStyle Width="80px"></ItemStyle>
+                    </asp:BoundField>
+                    <asp:BoundField ItemStyle-Width="400px" DataField="Detalle" HeaderText="Detalle" >
+                    <ItemStyle Width="400px"></ItemStyle>
+                    </asp:BoundField>  
+                </Columns>
+                 <HeaderStyle BackColor="#666666" BorderColor="Black" />
+                 <RowStyle BackColor="#CCCCCC" />
+            </asp:GridView>
             </div>
             
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Visible="False" />
+               
         </div>
     </form>
 </body>

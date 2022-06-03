@@ -2,7 +2,15 @@
 using System.Collections.Generic;
 using BE;
 using BLL;
-
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
 public partial class Respuesta : System.Web.UI.Page
 {
     Usuario_BE usuarioRespuesta = new Usuario_BE();
@@ -36,6 +44,13 @@ public partial class Respuesta : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)
     {
+        Label2.Text = "Bitacora de actividades: ";
+        this.llenarGrid();
+
+    }
+
+    protected void llenarGrid()
+    {
         string detalle = "Consulta de bitacora - Usuario: " + usuarioRespuesta.Usuario;
         usuarioRespuestaBLL.LLenar_Bitacora(usuarioRespuesta.IdUsuario, detalle);
         GridView1.Visible = true;
@@ -47,8 +62,12 @@ public partial class Respuesta : System.Web.UI.Page
         GridView1.DataSource = bitacora;
         GridView1.DataBind();
         Button2.Visible = false;
-
     }
 
-   
+    protected void OnPaging(object sender, GridViewPageEventArgs e)
+    {
+        GridView1.PageIndex = e.NewPageIndex;
+        this.llenarGrid();
+    }
+
 }
