@@ -130,7 +130,7 @@
                     <ItemStyle Width="400px"></ItemStyle>
                     </asp:BoundField>  
                 </Columns>
-                 <HeaderStyle BackColor="#666666" BorderColor="Black" />
+                 <HeaderStyle BackColor="#999999" BorderColor="Black" />
                  <PagerStyle CssClass="gridpager" HorizontalAlign="Right" />
                  <PagerSettings Mode="NextPreviousFirstLast" FirstPageText="<<" PreviousPageText="<" NextPageText=">" LastPageText=" >>"  Position="Bottom" />
                  <RowStyle BackColor="#CCCCCC" />
