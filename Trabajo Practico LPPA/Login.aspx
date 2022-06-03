@@ -91,7 +91,7 @@
         <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="222px" Height="21px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Debe ingresar un usuario para continuar"></asp:RequiredFieldValidator>
         <br />
-        CONTRASEÑA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CONTRASEÑA&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black" Width="222px" Height="21px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Debe ingresar una contraseña para continuar"></asp:RequiredFieldValidator>
         <br />

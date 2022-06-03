@@ -131,8 +131,8 @@
                     </asp:BoundField>  
                 </Columns>
                  <HeaderStyle BackColor="#999999" BorderColor="Black" />
-                 <PagerStyle CssClass="gridpager" HorizontalAlign="Right" />
-                 <PagerSettings Mode="NextPreviousFirstLast" FirstPageText="<<" PreviousPageText="<" NextPageText=">" LastPageText=" >>"  Position="Bottom" />
+                 <PagerStyle CssClass="gridpager" />
+                 <PagerSettings Mode="NextPreviousFirstLast" FirstPageText="&nbsp;<<&nbsp;" PreviousPageText="&nbsp;<&nbsp;" NextPageText="&nbsp;>&nbsp;" LastPageText="&nbsp;>>&nbsp;"  Position="Bottom" />
                  <RowStyle BackColor="#CCCCCC" />
             </asp:GridView>
             </div>
