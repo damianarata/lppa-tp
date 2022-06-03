@@ -114,6 +114,8 @@
         <div style="margin-left: 80px">
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Mostar Bitacora" Visible="False" BackColor="#CCCCCC" ForeColor="Black" />
             <div id="popup" style="max-height:600px;overflow-y:scroll;">
+            <asp:Label ID="Label3" runat="server" Text="Usuario: "></asp:Label>
+            <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="222px" Height="21px" OnTextChanged="textBox1_TextChanged"></asp:TextBox>
              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true"
                 OnPageIndexChanging="OnPaging" PageSize="10" Font-Names="Arial" BackColor="#999999" BorderColor="Black" BorderStyle="Dashed" ForeColor="Black">
                 <Columns>
@@ -136,7 +138,6 @@
                  <RowStyle BackColor="#CCCCCC" />
             </asp:GridView>
             </div>
-            
                
         </div>
     </form>

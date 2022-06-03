@@ -26,6 +26,8 @@ public partial class Respuesta : System.Web.UI.Page
             if (usuarioRespuesta.TipoUsuario.id == 1)
             {
                 Button2.Visible = true;
+                TextBox1.Visible = false;
+                Label3.Visible = false;
             }
             string detalle = "Inicio de Sesion - Usuario: " + usuarioRespuesta.Usuario;
             //se genera un registro en bitacora
@@ -36,20 +38,21 @@ public partial class Respuesta : System.Web.UI.Page
             {
                 ListBox1.Items.Add(accion.detalle);
             }
-
         }
-  
-
     }
 
     protected void Button2_Click(object sender, EventArgs e)
     {
         Label2.Text = "Bitacora de actividades: ";
+        Label3.Visible = true;
+        TextBox1.Visible = true;
+        Label3.Text = "Usuario: ";
+        Button2.Visible = false;
         this.llenarGrid();
-
+        
     }
 
-    protected void llenarGrid()
+    private void llenarGrid()
     {
         string detalle = "Consulta de bitacora - Usuario: " + usuarioRespuesta.Usuario;
         usuarioRespuestaBLL.LLenar_Bitacora(usuarioRespuesta.IdUsuario, detalle);
@@ -58,16 +61,35 @@ public partial class Respuesta : System.Web.UI.Page
         List<DetalleBitacora_BE> bitacora = new List<DetalleBitacora_BE>();
 
         bitacora = usuarioRespuestaBLL.Cargar_Bitacora();
-
+        if (TextBox1.Text != "")
+        {
+            bitacora = bitacora.FindAll(FilterFunc);
+        }
         GridView1.DataSource = bitacora;
         GridView1.DataBind();
-        Button2.Visible = false;
     }
 
     protected void OnPaging(object sender, GridViewPageEventArgs e)
     {
         GridView1.PageIndex = e.NewPageIndex;
         this.llenarGrid();
+    }
+
+    protected void textBox1_TextChanged(object sender, EventArgs e)
+    {
+        llenarGrid();
+    }
+
+    private bool FilterFunc(DetalleBitacora_BE detalle)
+    {
+        if (detalle.Usuario.Contains(TextBox1.Text) || TextBox1.Text.Contains(detalle.Usuario))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 }
