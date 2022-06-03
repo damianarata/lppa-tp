@@ -600,6 +600,7 @@ header .social-icon li a
 }
 /* end 360 media quires */
 
+/* start Bitacora quires */
 * {
 	padding: 0;
 	margin: 0;
@@ -673,3 +674,9 @@ background: #424242 url(grd_pgr.png) repeat-x top;
 	color: #000;
 	text-decoration: none;
 }
+
+.gridpager, .gridpager td {
+	padding-left: 5px;
+	text-align: right;
+}
+/* end Bitacora quires */
