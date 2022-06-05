@@ -97,3 +97,14 @@ C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\l
 C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.dll
 C:\Users\marti\Desktop\2022-1er\2-LeanguajesDeProgramacionParaLaAdministracion\lppa-tp\BLL\obj\Debug\BLL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\BLL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\BLL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\BE.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\DAL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\BE.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\bin\Debug\DAL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\BLL\obj\Debug\BLL.pdb
