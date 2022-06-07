@@ -97,9 +97,9 @@
 		<!-- end navigation -->
 
         
-        <div style="padding: 1%;
+        <div style="padding: 1% ;
 ">
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Label" ></asp:Label>
             <br />
             <br />
             Las acciones que el usuario puede realizar son:<br />
@@ -112,7 +112,7 @@
             <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
         </div>
         <div style="margin-left: 80px">
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Mostar Bitacora" Visible="False" BackColor="#CCCCCC" ForeColor="Black" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Mostar Bitacora" Visible="False" BackColor="#CCCCCC" ForeColor="Black" class="navbar-brand" />
             <div id="popup" style="max-height:600px;overflow-y:scroll;">
             <asp:Label ID="Label3" runat="server" Text="Usuario: "></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="222px" Height="21px" OnTextChanged="textBox1_TextChanged"></asp:TextBox>
