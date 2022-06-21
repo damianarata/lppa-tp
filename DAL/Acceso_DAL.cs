@@ -13,8 +13,7 @@ namespace DAL
         //SqlConnection conexion = new SqlConnection(@"Data Source=Z690-F\SQLExpress;Initial Catalog=VeterinariaLPPA;Integrated Security=True");
         //SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-4HK2VHN\SQLEXPRESS;Initial Catalog=VeterinariaLPPA;Integrated Security=True");
         //SqlConnection conexion = new SqlConnection(@"Data Source =.; Initial Catalog = VeterinariaLPPA; Integrated Security = True");
-        //SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-HKJF9404;Initial Catalog=Veterinaria_Cachorros;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-ERQ371J\SQLEXPRESS;Initial Catalog=VeterinariaLPPA;Integrated Security=True");
+        SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-HKJF9404;Initial Catalog=Veterinaria_Cachorros;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
         //ABRO Y CIERRO LA CONEXION
         public void Abrir()

@@ -14,6 +14,8 @@ namespace BE
 
         public TipoUsuario_BE TipoUsuario { get; set; }
 
+        // Agregado para el bloqueo por reintentos
+        public int Bloqueado { get; set; }
 
     }
 }

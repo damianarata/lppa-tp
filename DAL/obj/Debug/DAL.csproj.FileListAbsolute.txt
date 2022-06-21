@@ -88,3 +88,12 @@ C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\DAL
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.dll
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-feature-bitacora\DAL\obj\Debug\DAL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\bin\Debug\DAL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\bin\Debug\DAL.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\bin\Debug\BE.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\bin\Debug\BE.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\obj\Debug\DAL.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\DAL\obj\Debug\DAL.pdb
