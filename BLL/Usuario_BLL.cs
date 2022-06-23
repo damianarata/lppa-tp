@@ -32,6 +32,14 @@ namespace BLL
             return mapper.Listar_Bitacora();
         }
 
+        public bool TakeDB(string filename, string dire, int partes)
+        {
+            return mapper.TakeDB(filename, dire, partes);
+        }
+        public bool RestoreDB(string dire)
+        {
+            return mapper.RestoreDB(dire);
+        }
     }
 }
 
