@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Text;
+using System;
 
 namespace DAL
 {
@@ -80,6 +81,38 @@ namespace DAL
             lector = null;
             Cerrar();
             return res;
+        }
+
+        public bool ExecuteQuery(string Query)
+        {
+            bool result = false;
+
+            try
+            {
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conexion;
+                comm.CommandType = CommandType.Text;
+                comm.CommandText = string.Format(Query);
+                conexion.Open();
+                int i;
+                i = comm.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    result = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                result = false;
+                Console.WriteLine(Query);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+            return result;
         }
     }
 }

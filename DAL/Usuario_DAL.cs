@@ -121,5 +121,38 @@ namespace DAL
                 return sb.ToString();
             }
         }
+
+        public bool RestoreDB(string dire)
+        {
+            string query = string.Empty;
+            string Query2 = string.Format("ALTER DATABASE " + "[VeterinariaLPPA] " + "SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+            query = "USE MASTER RESTORE DATABASE" + " VeterinariaLPPA " + "FROM " + dire + " WITH REPLACE";
+            string Query3 = string.Format("ALTER DATABASE " + "[VeterinariaLPPA]" + " SET MULTI_USER");
+            bool status1 = ac.ExecuteQuery(Query2);
+            bool status2 = ac.ExecuteQuery(query);
+            bool status3 = ac.ExecuteQuery(Query3);
+            if (status1 == true && status2 == true && status3 == true)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool TakeDB(string filename, string dire, int partes)
+        {
+            string query = string.Empty;
+            int cant = Convert.ToInt16(partes);
+            string nomb = filename + "_" + Convert.ToString(DateTime.Today.Day) + "_" + Convert.ToString(DateTime.Today.Month) + "_" + Convert.ToString(DateTime.Today.Year) + "_Parte";
+            string texto1 = "";
+            string info = "";
+            for (int i = 1; i <= cant; i++)
+            {
+                texto1 += info;
+                texto1 += string.Format("DISK = N'" + dire + "\\" + filename + Convert.ToString(i) + ".bak'");
+                info = ",";
+            }
+            query = @"BACKUP DATABASE[" + "VeterinariaLPPA" + "] TO " + texto1 + " WITH NOFORMAT, NOINIT, NAME = N'" + "VeterinariaLPPA" + "-Completa Base de datos Copia de seguridad', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
+            ac.ExecuteQuery(query);
+            return true;
+        }
     }
 }
