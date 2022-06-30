@@ -119,3 +119,14 @@ C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BLL\obj\Debug\BLL
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BLL\obj\Debug\BLL.dll
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BLL\obj\Debug\BLL.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\BLL.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\BLL.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\BE.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\DAL.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\BE.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\bin\Debug\DAL.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\obj\Debug\BLL.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BLL\obj\Debug\BLL.pdb

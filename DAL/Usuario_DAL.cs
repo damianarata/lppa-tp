@@ -62,7 +62,28 @@ namespace DAL
             parametros[1].Value = detalle;
 
             DataTable Tabla = ac.Leer("llenar_bitacora", parametros);
+            string fecha = "";
+            int id = 0;
+            foreach (DataRow reg in Tabla.Rows)
+            {
+                fecha = reg["fecha"].ToString();
+                id = Convert.ToInt32(reg["id"].ToString());
+            }
+            ac.CalcularDVH(id.ToString() + detalle + fecha + id_usuario);
 
+            parametros = new SqlParameter[2];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@id";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = id;
+
+            parametros[1] = new SqlParameter();
+            parametros[1].ParameterName = "@dvh";
+            parametros[1].DbType = DbType.String;
+            parametros[1].Value = ac.CalcularDVH(id.ToString() + detalle + fecha + id_usuario);
+
+            Tabla = ac.Leer("update_bitacora", parametros);
+            ac.GuardarDigitoVerificador(ac.ObtenerDVHs("Bitacora"),"Bitacora");
         }
 
         public List<Accion_BE> Buscar_Acciones(int id_tipo_usuario)
