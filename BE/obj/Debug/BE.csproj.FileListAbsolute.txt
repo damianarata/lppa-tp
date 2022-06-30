@@ -21,3 +21,9 @@ C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BE\obj\Debug\BE.csproj.AssemblyR
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BE\obj\Debug\BE.dll
 C:\Users\juanc\Desktop\lppa-tp-feature-bitacora\BE\obj\Debug\BE.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\bin\Debug\BE.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\bin\Debug\BE.pdb
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.dll
+C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.pdb

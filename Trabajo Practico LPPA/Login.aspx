@@ -87,19 +87,17 @@
     <form id="form1" runat="server">
     <div class="auto-style1">
     
-        &nbsp;&nbsp;&nbsp;USUARIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        USUARIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
         <asp:TextBox ID="TextBox1" runat="server" ForeColor="Black" Width="222px" Height="21px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Debe ingresar un usuario para continuar"></asp:RequiredFieldValidator>
         <br />
-        &nbsp;&nbsp;&nbsp;CONTRASEÑA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CONTRASEÑA&nbsp;&nbsp;&nbsp;&nbsp
         <asp:TextBox ID="TextBox2" runat="server" ForeColor="Black" Width="222px" Height="21px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Debe ingresar una contraseña para continuar"></asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Su pasword debe contener al menos 6 letras , dos numeros y un caracter especial" ValidationExpression="[a-zA-Z]{6}\w*\d{2}\W{1}"></asp:RegularExpressionValidator>
         <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <div style="margin-left: 80px">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" Width="168px" BackColor="#CCCCCC" ForeColor="Black" class="navbar-brand" />
-            </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar" Width="168px" ForeColor="Black" />
         <br />
         <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="Usuario o Contraseña Incorrecto" Visible="False"></asp:Label>
     

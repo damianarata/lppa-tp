@@ -40,6 +40,7 @@ namespace DAL
                 tipoUsuario.id = Convert.ToInt32(reg["id_tipo_usuario"].ToString());
                 tipoUsuario.tipo_usuario = reg["tipo_usuario"].ToString();
                 usuarioBE.TipoUsuario = tipoUsuario; 
+                //usuarioBE.Bloqueado = Convert.ToInt32(reg["bloqueado"].ToString());
 
                 //user.Sesion.sesionIniciada = bool.Parse(reg["sesionIniciada"].ToString());
 
@@ -120,6 +121,62 @@ namespace DAL
                 }
                 return sb.ToString();
             }
+        }
+
+        //Agregado para el bloqueo de usuario por reintentos de contraseña
+        public void Bloquear_Usuario(string usuario)
+        {
+            SqlParameter[] parametros = new SqlParameter[1];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@usu";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = usuario;
+
+            DataTable Tabla = ac.Leer("bloquear_usuario", parametros);
+
+        }
+
+        public Usuario_BE validar_usuario_sinpassword(string usuario)
+        {
+
+
+            SqlParameter[] parametros = new SqlParameter[1];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@usu";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = usuario;
+
+
+            DataTable Tabla = ac.Leer("verificar_usuario_sinpassword", parametros);
+
+            Usuario_BE usuarioBE = new Usuario_BE();
+
+            foreach (DataRow reg in Tabla.Rows)
+            {
+
+                usuarioBE.Usuario = reg["usuario"].ToString();
+                usuarioBE.Contraseña = reg["contraseña"].ToString();
+                usuarioBE.IdUsuario = Convert.ToInt32(reg["id"].ToString());
+                usuarioBE.Nombre = reg["nombre"].ToString();
+                TipoUsuario_BE tipoUsuario = new TipoUsuario_BE();
+                tipoUsuario.id = Convert.ToInt32(reg["id_tipo_usuario"].ToString());
+                tipoUsuario.tipo_usuario = reg["tipo_usuario"].ToString();
+                usuarioBE.TipoUsuario = tipoUsuario;
+                usuarioBE.Bloqueado = Convert.ToInt32(reg["bloqueado"].ToString());
+
+            }
+            return usuarioBE;
+        }
+
+        public void blanquear_password(string usuario)
+        {
+            SqlParameter[] parametros = new SqlParameter[1];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@usu";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = usuario;
+
+            DataTable Tabla = ac.Leer("blanquear_password", parametros);
         }
     }
 }
