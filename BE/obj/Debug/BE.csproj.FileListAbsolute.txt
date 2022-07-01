@@ -27,3 +27,9 @@ C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.c
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.dll
 C:\Users\Pato\Desktop\Me\UAI\2022\LPPA\LPPA-2022\TP\lppa-tp-v3\BE\obj\Debug\BE.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\bin\Debug\BE.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\bin\Debug\BE.pdb
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\obj\Debug\BE.csprojAssemblyReference.cache
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\obj\Debug\BE.dll
+C:\Users\marti\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\2022-1\LPPA\lppa-tp\BE\obj\Debug\BE.pdb

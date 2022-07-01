@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Accion_BE.cs" />
     <Compile Include="DetalleBitacora_BE.cs" />
+    <Compile Include="DigitoVerificador_BE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoUsuario_BE.cs" />
     <Compile Include="Usuario_BE.cs" />

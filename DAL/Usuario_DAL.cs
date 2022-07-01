@@ -9,6 +9,7 @@ namespace DAL
     public class Usuario_DAL
     {
         Acceso_DAL ac = new Acceso_DAL();
+        Integridad_DAL pIntegridad = new Integridad_DAL();
         public Usuario_BE loguear(string usuario, string contraseña)
         {
 
@@ -66,10 +67,11 @@ namespace DAL
             int id = 0;
             foreach (DataRow reg in Tabla.Rows)
             {
-                fecha = reg["fecha"].ToString();
+                fecha = ((DateTime)reg["fecha"]).ToString("dd/MM/yyyy hh:mm:ss");
                 id = Convert.ToInt32(reg["id"].ToString());
             }
-            ac.CalcularDVH(id.ToString() + detalle + fecha + id_usuario);
+            string cadena = id.ToString() + detalle + fecha.ToString() + id_usuario.ToString();
+
 
             parametros = new SqlParameter[2];
             parametros[0] = new SqlParameter();
@@ -80,10 +82,10 @@ namespace DAL
             parametros[1] = new SqlParameter();
             parametros[1].ParameterName = "@dvh";
             parametros[1].DbType = DbType.String;
-            parametros[1].Value = ac.CalcularDVH(id.ToString() + detalle + fecha + id_usuario);
+            parametros[1].Value = pIntegridad.CalcularDVH(cadena);
 
-            Tabla = ac.Leer("update_bitacora", parametros);
-            ac.GuardarDigitoVerificador(ac.ObtenerDVHs("Bitacora"),"Bitacora");
+            Tabla = ac.Leer("update_bitacora_dvh", parametros);
+            pIntegridad.GuardarDigitoVerificador(pIntegridad.ObtenerDVHs("Bitacora"),"Bitacora");
         }
 
         public List<Accion_BE> Buscar_Acciones(int id_tipo_usuario)
@@ -155,6 +157,37 @@ namespace DAL
 
             DataTable Tabla = ac.Leer("bloquear_usuario", parametros);
 
+            int id = 0;
+            string pass = "";
+            string nombre = "";
+            int bloqueado = 0;
+            int tipo_usuario = 0;
+
+            foreach (DataRow reg in Tabla.Rows)
+            {
+                id = Convert.ToInt32(reg["id"].ToString());
+                tipo_usuario = Convert.ToInt32(reg["tipo_usuario"].ToString());
+                bloqueado = Convert.ToInt32(reg["bloqueado"].ToString());
+                pass = reg["contraseña"].ToString();
+                nombre = reg["nombre"].ToString();
+            }
+            string cadena = id.ToString() + usuario + pass + nombre + bloqueado.ToString() + tipo_usuario.ToString();
+
+
+            parametros = new SqlParameter[2];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@id";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = id;
+
+            parametros[1] = new SqlParameter();
+            parametros[1].ParameterName = "@dvh";
+            parametros[1].DbType = DbType.String;
+            parametros[1].Value = pIntegridad.CalcularDVH(cadena);
+
+            Tabla = ac.Leer("update_usuario_dvh", parametros);
+            pIntegridad.GuardarDigitoVerificador(pIntegridad.ObtenerDVHs("Usuario"), "Usuario");
+
         }
 
         public Usuario_BE validar_usuario_sinpassword(string usuario)
@@ -198,6 +231,37 @@ namespace DAL
             parametros[0].Value = usuario;
 
             DataTable Tabla = ac.Leer("blanquear_password", parametros);
+
+            int id = 0;
+            string pass = "";
+            string nombre = "";
+            int bloqueado = 0;
+            int tipo_usuario = 0;
+
+            foreach (DataRow reg in Tabla.Rows)
+            {
+                id = Convert.ToInt32(reg["id"].ToString());
+                tipo_usuario = Convert.ToInt32(reg["tipo_usuario"].ToString());
+                bloqueado = Convert.ToInt32(reg["bloqueado"].ToString());
+                pass = reg["contraseña"].ToString();
+                nombre = reg["nombre"].ToString();
+            }
+            string cadena = id.ToString() + usuario + pass + nombre + bloqueado.ToString() + tipo_usuario.ToString();
+
+
+            parametros = new SqlParameter[2];
+            parametros[0] = new SqlParameter();
+            parametros[0].ParameterName = "@id";
+            parametros[0].DbType = DbType.String;
+            parametros[0].Value = id;
+
+            parametros[1] = new SqlParameter();
+            parametros[1].ParameterName = "@dvh";
+            parametros[1].DbType = DbType.String;
+            parametros[1].Value = pIntegridad.CalcularDVH(cadena);
+
+            Tabla = ac.Leer("update_usuario_dvh", parametros);
+            pIntegridad.GuardarDigitoVerificador(pIntegridad.ObtenerDVHs("Usuario"), "Usuario");
         }
     }
 }
