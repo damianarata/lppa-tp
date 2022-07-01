@@ -42,18 +42,13 @@ namespace BLL
             //}
         }
 
-        public void ChequearDVV()
+        public List<Registro_BE> ChequearDVV()
         {
-            List<DigitoVerificador_BE> Tabla = pIntegridad.ChequearDigitoVerificadorVertical();
-            if (Tabla.Count == 0) { }
+            List<Registro_BE> Tabla = pIntegridad.ChequearDigitoVerificadorVertical();
+            if (Tabla.Count == 0) { return null; }
             else
             {
-                string mDetalle = "Fallo integridad digito verificador";
-                foreach (DigitoVerificador_BE mDVV in Tabla)
-                {
-                    //Crear Registro en bitacora
-                    throw new Exception(mDetalle);
-                }
+                return Tabla;
             }
         }
         #endregion

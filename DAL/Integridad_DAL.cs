@@ -86,14 +86,19 @@ namespace DAL
             return Tablas;
         }
 
-        public List<DigitoVerificador_BE> ChequearDigitoVerificadorVertical()
+        public List<Registro_BE> ChequearDigitoVerificadorVertical()
         {
-            List<DigitoVerificador_BE> Tablas = new List<DigitoVerificador_BE>();
+            List<Registro_BE> Tablas = new List<Registro_BE>();
             foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador())
             {
                 string DigitoVerificador = CalcularDVV(mDigitoVerificador.Tabla);
                 if (DigitoVerificador != mDigitoVerificador.DVV)
-                    Tablas.Add(mDigitoVerificador);
+                {
+                    Registro_BE mRegisto = new Registro_BE();
+                    mRegisto.Tabla = mDigitoVerificador.Tabla;
+                    mRegisto.ID_Registro = "DVV";
+                    Tablas.Add(mRegisto);
+                }
             }
             return Tablas;
         }
