@@ -13,6 +13,7 @@ namespace DAL
 
         public string CalcularDVH(string pString)
         {
+            // (Digito Verificador) 6 - Calculo de dvh basado en la codificacion ASCII
             int acum = 0;
             byte[] asciiBytes = Encoding.ASCII.GetBytes(pString);
             for (int i = 0; i < asciiBytes.Length; i++)
@@ -23,6 +24,7 @@ namespace DAL
         }
         public string CalcularDVV(List<string> pRows)
         {
+            // (Digito Verificador) 11 - Calculo de dvv como una suma acumulada de los dvh de cada registro de la tabla
             int acum = 0;
             foreach (string Registro in pRows)
             {
@@ -68,15 +70,16 @@ namespace DAL
 
         public List<Registro_BE> ChequearIntegridad()
         {
+            //(Digito Verificador) 3 - Se recalculan los valores de dvh y se los compara con los guardados. En caso de error, sumamos el registro erroneo a la tabla
             List<Registro_BE> Tablas = new List<Registro_BE>();
             string mHashCalculado;
             String[] mRegistroSplit;
-            foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador())
+            foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador()) // -->(Digito Verificador) 4 
             {
-                foreach (Registro_BE mReg in ObtenerDatosRegistros(mDigitoVerificador.Tabla))
+                foreach (Registro_BE mReg in ObtenerDatosRegistros(mDigitoVerificador.Tabla)) // -->(Digito Verificador) 5 
                 {
                     mRegistroSplit = mReg.Datos.Split(char.Parse(";"));
-                    mHashCalculado = CalcularDVH(mRegistroSplit[0]);
+                    mHashCalculado = CalcularDVH(mRegistroSplit[0]); // -->(Digito Verificador) 6
                     if (mHashCalculado != mRegistroSplit[1])
                     {
                         Tablas.Add(mReg);
@@ -88,10 +91,11 @@ namespace DAL
 
         public List<Registro_BE> ChequearDigitoVerificadorVertical()
         {
+            //(Digito Verificador) 9 - Se Recalculan los DVV y se los compara con los guardados. En caso de error, sumamos el registro erroneo a la tabla
             List<Registro_BE> Tablas = new List<Registro_BE>();
-            foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador())
+            foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador()) //-->(Digito Verificador) 10 
             {
-                string DigitoVerificador = CalcularDVV(mDigitoVerificador.Tabla);
+                string DigitoVerificador = CalcularDVV(mDigitoVerificador.Tabla); //-->(Digito Verificador) 11 
                 if (DigitoVerificador != mDigitoVerificador.DVV)
                 {
                     Registro_BE mRegisto = new Registro_BE();
@@ -107,7 +111,6 @@ namespace DAL
         private int ObtenerCantidadRegistrosDigitos(string pTabla)
         {
             string mQuery = "SELECT COUNT(*) as Cantidad FROM Digito_Verificador WHERE Tabla='" + pTabla + "'";
-            //return int.Parse(DAO.Instancia().ExecuteScalar(mQuery).ToString());
 
             DataTable Tabla = ac.Leer(mQuery);
             return int.Parse(Tabla.Rows[0]["Cantidad"].ToString());
@@ -144,8 +147,6 @@ namespace DAL
             parametros[1].Value = DigitoVerificador;
 
             DataTable Tabla = ac.Leer("modificar_digito_verificador", parametros);
-            //string mQuery = "UPDATE Digito_Verificador SET DVV = " + DigitoVerificador + "WHERE Tabla='" + pTabla + "'";
-            //DAO.Instancia().ExecuteNonQuery(mQuery);
 
         }
 
@@ -158,12 +159,12 @@ namespace DAL
             parametros[0].Value = pTabla;
 
             DataTable Tabla = ac.Leer("borrar_digito_verificador", parametros);
-            //string mQuery = "DELETE Digito_Verificador WHERE Tabla='" + pTabla + "'";
-            //DAO.Instancia().ExecuteNonQuery(mQuery);
         }
 
         private List<DigitoVerificador_BE> ObtenerTablasDigitoVerificador()
         {
+            //(Digito Verificador) 4 - Se obtienen las tablas que tiene digitos verificadores
+            //(Digito Verificador) 10 - Se obtienen las tablas que tiene digitos verificadores
             string mQuery = "SELECT * FROM Digito_Verificador";
             DataTable Tabla = ac.Leer(mQuery);
             List<DigitoVerificador_BE> mTablas = new List<DigitoVerificador_BE>();
@@ -179,6 +180,7 @@ namespace DAL
 
         private List<Registro_BE> ObtenerDatosRegistros(string pTabla)
         {
+            // (Digito Verificador) 5 - Se obtienen los datos de los registros para recalcular el dvh
             List<Registro_BE> Registros = new List<Registro_BE>();
             string Registro = "";
             string DVH = "";

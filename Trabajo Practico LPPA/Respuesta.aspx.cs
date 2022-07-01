@@ -29,6 +29,11 @@ public partial class Respuesta : System.Web.UI.Page
                 TextBox1.Visible = false;
                 Label3.Visible = false;
             }
+            else
+            {
+                TextBox1.Visible = false;
+                Label3.Visible = false;
+            }
             string detalle = "Inicio de Sesion - Usuario: " + usuarioRespuesta.Usuario;
             //se genera un registro en bitacora
             usuarioRespuestaBLL.LLenar_Bitacora(usuarioRespuesta.IdUsuario, detalle);

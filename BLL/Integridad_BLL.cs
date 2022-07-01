@@ -25,25 +25,16 @@ namespace BLL
         #region private functions
         public List<Registro_BE> ChequearDVH()
         {
+            //(Digito Verificador) 2 - Se obtienen las tablas con errores de verificacion DVH
             List<Registro_BE> Tablas = pIntegridad.ChequearIntegridad();
             if (Tablas.Count > 0)
                 return Tablas;
             return null;
-
-            //if (Tabla.Count == 0) { }
-            //else
-            //{
-            //    string mDetalle = "Fallo integridad";
-            //    foreach (DigitoVerificador_BE mDVV in Tabla)
-            //    {
-            //        //Crear Registro en bitacora
-            //        throw new Exception(mDetalle);
-            //    }
-            //}
         }
 
         public List<Registro_BE> ChequearDVV()
         {
+            //(Digito Verificador) 8 - Se obtienen las tablas con errores de verificacion DVV
             List<Registro_BE> Tabla = pIntegridad.ChequearDigitoVerificadorVertical();
             if (Tabla.Count == 0) { return null; }
             else

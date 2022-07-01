@@ -14,13 +14,7 @@ public partial class FalloIntegridad : System.Web.UI.Page
 
         if (!IsPostBack)
         {
-            //foreach (Registro_BE registro in registros)
-            //{
-            //    if (null == ListBox1.Items.FindByValue(registros.Tabla))
-            //    {
-            //        ListBox1.Items.Add(registros.Tabla);
-            //    }
-            //}
+            //(Digito Verificador) 13 - Se muestran las tablas por pantalla
             this.llenarGrid();
         }
 
