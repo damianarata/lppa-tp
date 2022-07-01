@@ -11,10 +11,10 @@ public partial class Inicio : System.Web.UI.Page
     Integridad_BLL pIntegridad = new Integridad_BLL();
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<DigitoVerificador_BE> Tablas = pIntegridad.ChequearDVH();
-        if (null != Tablas)
+        List<Registro_BE> Registros = pIntegridad.ChequearDVH();
+        if (null != Registros)
         {
-            Session["Tablas"] = Tablas;
+            Session["Registros"] = Registros;
             Response.Redirect("FalloIntegridad.aspx");
         }
     }

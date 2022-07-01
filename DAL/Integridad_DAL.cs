@@ -66,20 +66,20 @@ namespace DAL
             return CalcularDVV(ObtenerDVHs(pTabla));
         }
 
-        public List<DigitoVerificador_BE> ChequearIntegridad()
+        public List<Registro_BE> ChequearIntegridad()
         {
-            List<DigitoVerificador_BE> Tablas = new List<DigitoVerificador_BE>();
+            List<Registro_BE> Tablas = new List<Registro_BE>();
             string mHashCalculado;
             String[] mRegistroSplit;
             foreach (DigitoVerificador_BE mDigitoVerificador in ObtenerTablasDigitoVerificador())
             {
-                foreach (string mReg in ObtenerDatosRegistros(mDigitoVerificador.Tabla))
+                foreach (Registro_BE mReg in ObtenerDatosRegistros(mDigitoVerificador.Tabla))
                 {
-                    mRegistroSplit = mReg.Split(char.Parse(";"));
+                    mRegistroSplit = mReg.Datos.Split(char.Parse(";"));
                     mHashCalculado = CalcularDVH(mRegistroSplit[0]);
                     if (mHashCalculado != mRegistroSplit[1])
                     {
-                        Tablas.Add(mDigitoVerificador);
+                        Tablas.Add(mReg);
                     }
                 }
             }
@@ -172,9 +172,9 @@ namespace DAL
             return mTablas;
         }
 
-        private List<string> ObtenerDatosRegistros(string pTabla)
+        private List<Registro_BE> ObtenerDatosRegistros(string pTabla)
         {
-            List<string> Registros = new List<string>();
+            List<Registro_BE> Registros = new List<Registro_BE>();
             string Registro = "";
             string DVH = "";
 
@@ -185,6 +185,7 @@ namespace DAL
             {
                 foreach (DataRow mROW in Tabla.Rows)
                 {
+                    Registro_BE mRegistro = new Registro_BE();
                     for (int i = 0; i < Tabla.Columns.Count; i++)
                     {
                         string mCol = Tabla.Columns[i].ColumnName.ToString();
@@ -192,10 +193,13 @@ namespace DAL
                             Registro += mROW[mCol].ToString();
                         if (mCol == "dvh")
                             DVH = mROW[mCol].ToString();
-
+                        if (mCol == "id")
+                            mRegistro.ID_Registro = mROW[mCol].ToString();
                     }
                     Registro += ";" + DVH;
-                    Registros.Add(Registro);
+                    mRegistro.Datos = Registro;
+                    mRegistro.Tabla = pTabla;
+                    Registros.Add(mRegistro);
                     Registro = "";
                 }
             }

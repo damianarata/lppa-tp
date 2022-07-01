@@ -23,9 +23,9 @@ namespace BLL
             }
         }
         #region private functions
-        public List<DigitoVerificador_BE> ChequearDVH()
+        public List<Registro_BE> ChequearDVH()
         {
-            List<DigitoVerificador_BE> Tablas = pIntegridad.ChequearIntegridad();
+            List<Registro_BE> Tablas = pIntegridad.ChequearIntegridad();
             if (Tablas.Count > 0)
                 return Tablas;
             return null;
